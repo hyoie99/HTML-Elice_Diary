@@ -19,7 +19,7 @@ h1 {
 }
 
 .category {
-  background-color: #7913f0;
+  background-color: #af74ff;
   width: 90%;
   padding: 5px;
   margin: 10px 0;
@@ -28,7 +28,7 @@ h1 {
   border-radius: 5px;
 }
 
-.category > a {
+.category a {
   text-decoration: none;
   font-size: 25px;
   color: #ffffff;
@@ -41,7 +41,6 @@ h1 {
   padding: 5px;
   border-radius: 5px;
   margin: 15px 0 20px 0;
-  /* margin-top: 15px; */
 }
 
 .profile-text {
@@ -52,12 +51,12 @@ h1 {
   justify-content: center;
 }
 
-.profile-text > p:first-child {
+.profile-text .name {
   font-size: 45px;
   margin-bottom: 50px;
 }
 
-.profile-text > p:last-child {
+.profile-text .exp {
   font-size: 20px;
 }
 
@@ -73,7 +72,6 @@ h1 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 5px;
-  /* margin-bottom: 30px; */
   margin: 10px 0;
   border-radius: 5px;
 }
@@ -84,6 +82,7 @@ h1 {
   width: 300px;
   padding: 15px 30px;
   margin: 15px;
+  cursor: pointer;
 }
 
 .post-img {
@@ -95,10 +94,9 @@ h1 {
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-end; */
 }
 
-.title {
+.post-main .title {
   font-size: 20px;
   width: 180px;
   white-space: nowrap;
@@ -119,59 +117,65 @@ h1 {
   -webkit-box-orient: vertical;
 }
 
-.post-one {
-  background-color: #ffffff;
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup .background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popupBox {
+  position: absolute;
+  background-color: #ffffff;
   border-radius: 5px;
-}
-
-.post-one > img {
   width: 700px;
-  height: 500px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.not-img {
-  /* background-color: aqua; */
-  width: 500px;
-  /* padding: 0 50px; */
-  margin: 30px 50px;
+  height: 700px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.not-img-main {
+.pop-main {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.one-title {
-  font-size: 30px;
+.pop-img {
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
 }
 
-.one-date {
+.pop-title {
+  font-size: 25px;
+}
+
+.pop-detail {
   font-size: 20px;
-}
-
-.not-img > p {
-  /* background-color: #7913f0; */
-  text-align: justify;
-  font-size: 18px;
-  height: 300px;
 }
 
 button {
   background-color: transparent;
-  /* border: 1.5px dashed black; */
   border: none;
   color: #af74ff;
   font-size: 15px;
   width: 100%;
-  padding: 5px 0;
-  margin-top: 8px;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
